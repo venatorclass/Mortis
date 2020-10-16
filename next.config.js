@@ -8,14 +8,16 @@ module.exports = {
     return config
   }
 }
-include<stdio.h>
-#include<stdlib.h>
+
+#include <stdio.h>
+#include <stdlib.h>
+#define mac(i)  (i*i*i)
 int ss(int n)
 {
     int i,sum=0;
     for(i=1;i<=n;i++)
     {
-        sum+=(i*i*i);
+        sum=sum+mac(i);
     }
     return sum;
 }
